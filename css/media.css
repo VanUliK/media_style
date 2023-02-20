@@ -67,7 +67,6 @@
 
   .container {
     display: flex;
-    height: 70px;
   }
   .menu {
     display: none;
