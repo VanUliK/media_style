@@ -1,0 +1,18 @@
+@media (max-width: 1115px) {
+  .automated__row {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .automated__column-img {
+    max-width: 100%;
+  }
+  .automated__row:nth-child(even) {
+  }
+}
+
+@media (max-width: 767px) {
+  /*
+  Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+  Это множество мобильных устройств
+  */
+}
