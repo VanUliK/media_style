@@ -1,4 +1,23 @@
+@media (max-width: 1260px) {
+  .header__content {
+    margin: 0 20px;
+    margin-bottom: 78px;
+  }
+}
+
 @media (max-width: 1115px) {
+  .features__row {
+    column-gap: 0;
+    gap: 5px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__content {
+    margin: 0 20px;
+  }
+
   .automated__row {
     flex-direction: column;
     margin-top: 0;
@@ -30,16 +49,111 @@
     align-items: center;
     flex-direction: column;
   }
-  .header__logo {
-    margin-right: 82px;
+  .companies__icons {
+    width: auto;
+  }
+
+  .header__row {
+    padding-top: 0;
   }
   .menu {
     margin: auto;
   }
 }
 @media (max-width: 767px) {
-  /*
-  Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
-  Это множество мобильных устройств
-  */
+  .header {
+    height: 900px;
+  }
+
+  .container {
+    display: flex;
+    height: 70px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .sign {
+    display: none;
+  }
+  .header__top {
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  .header__text {
+    margin-bottom: 26px;
+  }
+  .header__img {
+    margin: 29px 20px;
+  }
+
+  .header__img img {
+    max-height: 300px;
+  }
+
+  .header__img::before {
+    display: none;
+  }
+
+  .header__title {
+    font-size: 35px;
+  }
+
+  .header__row {
+    column-gap: 0px;
+    flex-direction: column-reverse;
+  }
+
+  element.style {
+    margin-bottom: 128px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .main {
+    padding-top: 0px;
+    padding-bottom: 35px;
+  }
+
+  .main .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .companies__column--mini-size {
+    display: none;
+    width: 431px;
+    flex-shrink: 0;
+  }
+
+  .features__row {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+  }
+  .footer__row {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__menu {
+    display: none;
+    align-items: center;
+  }
 }
