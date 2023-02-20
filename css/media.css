@@ -61,6 +61,13 @@
   }
 }
 @media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .header__title {
+    font-size: 31px;
+  }
   .header {
     height: 900px;
   }
@@ -147,17 +154,16 @@
 
   .footer {
     display: flex;
+    justify-content: space-around;
     height: 97px;
   }
   .footer__row {
     padding: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
   .footer__menu {
     display: none;
-    align-items: center;
   }
 }
