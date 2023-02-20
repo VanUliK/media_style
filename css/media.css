@@ -1,15 +1,42 @@
 @media (max-width: 1115px) {
   .automated__row {
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 0;
   }
   .automated__column-img {
     max-width: 100%;
   }
+  .automated__row + .automated__row {
+    margin-top: 70px;
+  }
+
   .automated__row:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .automated {
+    padding-bottom: 0px;
+  }
+
+  .companies__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__top {
+    gap: 30px;
+    padding-top: 50px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-right: 82px;
+  }
+  .menu {
+    margin: auto;
   }
 }
-
 @media (max-width: 767px) {
   /*
   Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
