@@ -22,7 +22,9 @@
             <img class="logo__img" src="./img/header/logo.svg" alt="logo">
           </a>
         </div>
-        <nav class="menu">
+
+
+        <div class="menu">
           <ul class="menu__list">
             <li class="menu__items">
               <a class="menu__link" href="#!">Products</a>
@@ -41,11 +43,18 @@
               <a class="menu__link" href="#!">Blog</a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div class="sign">
           <button class="sign__in-btn" href="#!">Sign in</button>
           <button class="sign__up-btn" href="#!">Sign Up</button>
         </div>
+        <nav class="hamburger-menu">
+          <label class="menu-btn" for="menu__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </nav>
       </div>
     </div>
     <div class="header__row">
@@ -327,6 +336,18 @@
     </div>
   </div>
   <script src="./js/main.js"></script>
+  <script>
+    let menuBtn = document.querySelector('.menu-btn');
+    let menuEl = document.querySelector('.menu');
+    let body = document.body;
+    menuBtn.addEventListener('click', function () {
+      menuBtn.classList.toggle('active');
+      menuEl.classList.toggle('active');
+      body.classList.toggle('hide__scroll')
+
+
+    })
+  </script>
 </body>
 
 </html>
